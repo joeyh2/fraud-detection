@@ -1,3 +1,3 @@
 # fraud-detection
 
-![ERD](ERD.png)
+![ERD](ERD_2.0.png)
