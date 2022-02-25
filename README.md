@@ -1,3 +1,3 @@
 # fraud-detection
 
-![alt text](image.jpg)
+![ERD](ERD2.0.png)
