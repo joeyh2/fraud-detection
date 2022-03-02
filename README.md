@@ -46,15 +46,22 @@ This is my query to count 'small transactions' per cardholder:
 
 One person has 26 transactions under 2.00 USD. This leads all cardholders. The credit card company may wish to contact that individual to see if those specific transactions are legitimate. 
 
+## What are the top 100 highest transactions made between 7:00 am and 9:00 am?
 
+This is my query to filter and sort these transactions:
 
+![top_100](top_100.png)
 
+## Do you see any anomalous transactions that could be fraudulent?
 
+The top 9 highest transactions during this time range from 100 USD to 1,894 USD. However, the rest of the 91 returned values are all well below this, from 11.65 USD to 23.13 USD. The top 9 highest are suspicious and potentially fraudulent being so much higher than the rest and making up only 10% of all the transactions during this time.  
 
+## Is there a higher number of fraudulent transactions made during this time frame versus the rest of the day?
 
+During the rest of the day (aka, hours not in between 7 and 9 am), only the top 100 transactions range from 22.78 USD to 2,249 USD, with the rest of the over 3000 transactions being well below this. Therefore, it does seem that unusually large and potentially fraudulent transactions occur in higher frequency/proportion to the rest during the 7am - 9am timeframe.  
 
+![rest_of_day](rest_of_day.png)
 
+## What are the top 5 merchants prone to being hacked using small transactions?
 
-
-
-
+![prone_merchants](prone_merchants.png)
