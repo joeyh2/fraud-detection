@@ -76,6 +76,7 @@ The two most important customers of the firm may have been hacked. Verify if the
 
 ### What difference do you observe between the consumption patterns? Does the difference suggest a fraudulent transaction? 
 
+Based on the plots it appears fraudulent transactions may exist for card holder 18. There are at least 10 sharp and random spikes in their spending pattern which breaks the otherwise small amount pattern for both cardholders.
 
 
 ## Data Analysis Question 2
@@ -84,4 +85,4 @@ The CEO of the biggest customer of the firm suspects that someone has used her c
 
 ### Are there any outliers for cardholder ID 25? How many outliers are there per month? Do you notice any anomalies? 
 
-
+There exists at least one outlier transaction in almost every month (minus February) for Carholder 25, with as many as 3 in some months like April and June. This suggests some level of potentially fraudulent treansactions occuring almost monthly.
