@@ -1,6 +1,6 @@
 # Fraud Detection
 
-![Credit card fraudster](credit_card_fraudster.jpg)
+![Credit card fraudster](images/credit_card_fraudster.jpg)
 
 *[Credit Card Fraudster by Richard Patterson](https://www.flickr.com/photos/136770128@N07/42252105582/) | [Creative Commons Licensed](https://creativecommons.org/licenses/by/2.0/)*
 
@@ -34,13 +34,13 @@ Some fraudsters may hack a credit card by making several small transactions, gen
 
 This is my query to retrieve transactions grouped by cardholder:
 
-![group_by](group_by_card_holder.png)
+![group_by](images/group_by_card_holder.png)
 
 ## Count the transactions that are less than 2.00 USD per cardholder.
 
 This is my query to count 'small transactions' per cardholder:
 
-![small_trans](small_transactions.png)
+![small_trans](images/small_transactions.png)
 
 ## Is there any evidence to suggest that a credit card has been hacked?
 
@@ -50,7 +50,7 @@ One person has 26 transactions under 2.00 USD. This leads all cardholders. The c
 
 This is my query to filter and sort these transactions:
 
-![top_100](top_100.png)
+![top_100](images/top_100.png)
 
 ## Do you see any anomalous transactions that could be fraudulent?
 
@@ -60,11 +60,11 @@ The top 9 highest transactions during this time range from 100 USD to 1,894 USD.
 
 During the rest of the day (aka, hours not in between 7 and 9 am), the top 100 transactions range from 22.78 USD to 2,249 USD. Therefore, it does seem that relatively small and potentially fraudulent transactions occur in higher proportion during 7am - 9am timeframe. Potential rationale for this includes that fraudsters assume people are sleeping, just getting up/ready for work, or otherwise preoccupied in early in the mornings and not paying attention to their banking.
 
-![rest_of_day](rest_of_day.png)
+![rest_of_day](images/rest_of_day.png)
 
 ## What are the top 5 merchants prone to being hacked using small transactions?
 
-![prone_merchants](prone_merchants.png)
+![prone_merchants](images/prone_merchants.png)
 
 ---------------------------------------------------------------------------------
 
@@ -78,6 +78,7 @@ The two most important customers of the firm may have been hacked. Verify if the
 
 Based on the plots it appears fraudulent transactions may exist for card holder 18. There are at least 10 sharp and random spikes in their spending pattern which breaks the otherwise small amount pattern for both cardholders.
 
+![overlaid](images/overlaid.png)
 
 ## Data Analysis Question 2
 
@@ -86,3 +87,5 @@ The CEO of the biggest customer of the firm suspects that someone has used her c
 ### Are there any outliers for cardholder ID 25? How many outliers are there per month? Do you notice any anomalies? 
 
 There exists at least one outlier transaction in almost every month (minus February) for Carholder 25, with as many as 3 in some months like April and June. This suggests some level of potentially fraudulent treansactions occuring almost monthly.
+
+![box_plot](images/box_plot.png)
